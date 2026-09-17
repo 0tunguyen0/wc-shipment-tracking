@@ -1,0 +1,42 @@
+.wc-shipment-tracking-wrapper {
+    padding: 10px 0;
+}
+
+.wc-shipment-tracking-wrapper label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.wc-shipment-tracking-wrapper input,
+.wc-shipment-tracking-wrapper select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.wc-shipment-tracking-wrapper .button {
+    margin-right: 10px;
+}
+
+.wc-shipment-tracking-status {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: italic;
+}
+
+.wc-shipment-tracking-status.success {
+    color: #5cb85c;
+}
+
+.wc-shipment-tracking-status.error {
+    color: #d9534f;
+}
+
+.wc-shipment-tracking-wrapper .description {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #777;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
