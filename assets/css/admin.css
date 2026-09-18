@@ -1,42 +1,78 @@
+/**
+ * Admin styles for WooCommerce Shipment Tracking
+ */
+
 .wc-shipment-tracking-wrapper {
-    padding: 10px 0;
+	padding: 4px 0 8px;
+}
+
+.wc-shipment-tracking-wrapper .form-field {
+	margin: 0 0 14px;
 }
 
 .wc-shipment-tracking-wrapper label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+	display: block;
+	margin-bottom: 4px;
+	font-weight: 600;
+	color: #1d2327;
 }
 
-.wc-shipment-tracking-wrapper input,
+.wc-shipment-tracking-wrapper input[type="text"],
+.wc-shipment-tracking-wrapper input[type="url"],
+.wc-shipment-tracking-wrapper input[type="number"],
 .wc-shipment-tracking-wrapper select {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.wc-shipment-tracking-wrapper .button {
-    margin-right: 10px;
-}
-
-.wc-shipment-tracking-status {
-    display: inline-block;
-    vertical-align: middle;
-    font-style: italic;
-}
-
-.wc-shipment-tracking-status.success {
-    color: #5cb85c;
-}
-
-.wc-shipment-tracking-status.error {
-    color: #d9534f;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .wc-shipment-tracking-wrapper .description {
-    display: block;
-    font-size: 12px;
-    font-style: italic;
-    color: #777;
-    margin-top: -8px;
-    margin-bottom: 10px;
+	display: block;
+	margin-top: 4px;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #646970;
+	font-style: italic;
+}
+
+.wc-shipment-tracking-live-link {
+	display: block;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.wc-shipment-tracking-live-link a {
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.wc-shipment-tracking-live-link a:hover {
+	text-decoration: underline;
+}
+
+.wc-shipment-tracking-actions {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 16px;
+	padding-top: 12px;
+	border-top: 1px solid #f0f0f1;
+}
+
+.wc-shipment-tracking-status {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 500;
+	transition: opacity 0.2s ease;
+}
+
+.wc-shipment-tracking-status.success {
+	color: #008a20;
+}
+
+.wc-shipment-tracking-status.error {
+	color: #d63638;
+}
+
+.wc-shipment-tracking-status.saving {
+	color: #2271b1;
 }
